@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import useLang from "../../utils/useLang";
+import useLang from "../../hooks/useLang";
 
 
 function Nav(): JSX.Element {

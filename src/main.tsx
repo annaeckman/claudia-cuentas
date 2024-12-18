@@ -2,19 +2,24 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './components/App/App.tsx'
-import { Lang } from './utils/useLang.ts'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router';
-
-const defaultLang:Lang = 'en';
+import { defaultLang, LANG_PARAM, useSetHtmlLang } from './hooks/useLang.ts'
+import { BrowserRouter, Routes, Route, Navigate, Outlet } from 'react-router'
 
 createRoot(document.getElementById('root')!).render(
-  <BrowserRouter>
   <StrictMode>
-    <Routes>
-      <Route path="/" element={<Navigate to={`/${defaultLang}`} />} />
-      <Route path="/:lang" element={<App />} />
-      <Route path= "/:lang/about" element={<div />} />
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<HtmlLangSetter />}>
+          <Route path="/" element={<Navigate to={`/${defaultLang}`} />} />
+          <Route path={`/:${LANG_PARAM}`} element={<App />} />
+          <Route path={`/:${LANG_PARAM}/about`} element={<div />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </StrictMode>
-  </BrowserRouter>
 )
+
+function HtmlLangSetter(): JSX.Element {
+  useSetHtmlLang()
+  return <Outlet />
+}
