@@ -1,0 +1,26 @@
+.nav {
+  padding: 20px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8f1a00;
+}
+
+.nav__logo {
+  font-family: "Instrument-Sans", "Ariel";
+  color: #fbc246;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.nav__links {
+  font-family: "Instrument-Sans";
+}
+
+.nav__link {
+  padding: 10px;
+  color: #fbc246;
+  text-decoration: none;
+}
