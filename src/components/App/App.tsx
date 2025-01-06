@@ -5,6 +5,7 @@ import { title, claudiaDescription } from '../../utils/copy.tsx'
 import { useParams } from 'react-router'
 import useLang from '../../utils/useLang.ts'
 import Nav from '../Nav/Nav.tsx';
+import CoraCenter from '../CoraCenter/CoraCenter.tsx';
 
 // whenever I change the language: add as onClick: document.documentElement.lang = lang
 
@@ -16,7 +17,7 @@ function App(): JSX.Element{
       <div>
           <Nav />
       <h1>{title[lang]}</h1>
-    
+      <CoraCenter />
       <Link to={`/${lang === 'en' ? 'es' : 'en'}`}>
           {title[lang === 'en' ? 'es' : 'en']}
         </Link>
