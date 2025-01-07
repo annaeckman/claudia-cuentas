@@ -5,12 +5,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #8f1a00;
+  background-color: #000;
 }
 
 .nav__logo {
   font-family: "Instrument-Sans", "Ariel";
-  color: #fbc246;
+  color: #fff;
   text-decoration: none;
   font-size: 24px;
 }
@@ -21,6 +21,10 @@
 
 .nav__link {
   padding: 10px;
-  color: #fbc246;
+  color: #fff;
   text-decoration: none;
+}
+
+.nav__lang {
+  color: #fff;
 }
