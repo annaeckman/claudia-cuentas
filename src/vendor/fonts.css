@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Instrument-Sans";
-  src: url("./fonts/InstrumentSans-Regular.ttf") format("ttf");
+  src: url("./fonts/InstrumentSans-Regular.ttf") format("truetype");
   font-weight: 500;
   font-display: swap;
   font-style: normal;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Instrument-Sans-Bold";
-  src: url("./fonts/InstrumentSans-Bold.ttf") format("ttf");
+  src: url("./fonts/InstrumentSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Instrument-Serif";
-  src: url("./fonts/InstrumentSerif-Regular.ttf") format("ttf");
+  src: url("./fonts/InstrumentSerif-Regular.ttf") format("truetype");
   font-weight: 500;
   font-display: swap;
   font-style: normal;

@@ -1,5 +1,3 @@
-import { Link } from 'react-router'
-
 type Copy = {
     en: React.ReactNode
     es: React.ReactNode
@@ -17,8 +15,7 @@ export const claudiaDescription: Copy = {
             and bicultural artist, a license marriage and family therapist, a
             researcher and an educator. I specialize in the intersectionality of
             art, healing trauma, trauma recovery, cultural identity, indigenous
-            knowledge and decolonization of healing.{' '}
-            <Link to="services">services</Link>
+            knowledge and decolonization of healing.
         </>
     ),
     es: (
@@ -28,22 +25,22 @@ export const claudiaDescription: Copy = {
             investigadora y educadora, especializada en la interseccionalidad
             del arte, la curación del trauma, la recuperación del trauma, la
             identidad cultural, el conocimiento indígena y la descolonización de
-            la curación. <Link to="services">services</Link>
+            la curación.
         </>
     ),
 }
 
-export const coraCenterDescription: Copy = {
+export const claudiaSubheader: Copy = {
     en: (
         <>
-            All the Lorem Ipsum generators on the Internet tend to repeat
-            predefined chunks as necessary, making this the first true generator
-            on the Internet. It uses a dictionary of over 200 Latin words,
-            combined with a handful of model sentence structures, to generate
-            Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is
-            therefore always free from repetition, injected humour, or
-            non-characteristic words etc.
+            therapist, artist, educator at the intersection of trauma recovery,
+            cultural identity, and indigenous knowledge.
         </>
     ),
-    es: <></>,
+    es: (
+        <>
+            terapeuta, artista, educador en la intersección de la recuperación
+            del trauma, identidad cultural y conocimiento indígena.
+        </>
+    ),
 }

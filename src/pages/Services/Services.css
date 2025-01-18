@@ -1,11 +1,11 @@
-.cora {
+.services {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100vh;
 }
 
-.cora__text-container {
-    background-color: #d25a3d;
+.services__text-container {
+    background-color: #f07926;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -14,60 +14,36 @@
     padding: 20px;
 }
 
-.cora__image-container {
+.services__image-container {
     height: 100%;
-    background-color: #dc8d5e;
+    background-color: #6e0e07;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
-.cora__image {
+.services__image {
     height: 400px;
-    width: 600px;
+    width: 450px;
 }
 
-.cora__header {
+.services__header {
+    width: 300px;
     font-family: 'Instrument-Serif';
     font-size: 20px;
 }
 
-.cora__sub-header {
+.services__sub-header {
     width: 300px;
     font-family: 'Instrument-Sans';
     font-size: 24px;
     line-height: 1.6em;
 }
 
-.cora__description {
-    width: 450px;
-    font-family: 'Instrument-Serif';
-    font-size: 20px;
-    line-height: 1.6em;
-    padding-top: 50px;
-}
-
-.cora__links {
-    display: flex;
-    justify-content: space-between;
-}
-
-.cora__link {
+.services__description {
     width: 300px;
     font-family: 'Instrument-Serif';
     font-size: 20px;
     line-height: 1.6em;
-    text-decoration: none;
-    color: #000;
-}
-
-.cora__link:hover {
-    cursor: pointer;
-    opacity: 0.5;
-}
-
-.cora__instagram {
-    height: 20px;
-    width: 20px;
 }
