@@ -1,18 +1,21 @@
 import './LanguageToggle.css'
-import { useNavigate } from 'react-router'
+import { useNavigate, useLocation } from 'react-router'
 import useLang from '../../utils/useLang.ts'
 
 function LanguageToggle(): JSX.Element {
     const navigate = useNavigate()
+    const location = useLocation()
+    const currentLocationString = location.pathname.split('/')[2]
     const lang = useLang()
 
     const handleLanguageClick = () => {
-        navigate(`/${lang === 'en' ? 'es' : 'en'}`)
+        navigate(`/${lang === 'en' ? 'es' : 'en'}/${currentLocationString}`)
+        //if you click it on a different page than home it brings you home
     }
 
     return (
         <div className="switch__container">
-            <p className="switch__text">in english</p>
+            <p className="switch__text">en espanol</p>
             <label className="switch__label">
                 <input
                     onClick={handleLanguageClick}
@@ -27,16 +30,8 @@ function LanguageToggle(): JSX.Element {
                     }
                 ></span>
             </label>
-            <p className="switch__text">en espanol</p>
+            <p className="switch__text">in english</p>
         </div>
     )
 }
 export default LanguageToggle
-
-{
-    /* <Link className="nav__lang" to={`/${lang === 'en' ? 'es' : 'en'}`}>
-{title[lang === 'en' ? 'es' : 'en']}
-</Link> */
-}
-
-//before we used a link which manually changed the domain...

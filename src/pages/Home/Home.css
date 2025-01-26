@@ -1,11 +1,14 @@
 .home {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh;
+    height: 80vh;
+    background-color: #fbc246;
+}
+
+.home__content {
+    display: flex;
+    justify-content: space-around;
 }
 
 .home__text-container {
-    background-color: #fbc246;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -14,36 +17,33 @@
     padding: 20px;
 }
 
-.home__image-container {
-    height: 100%;
-    background-color: #6e0e07;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
 .home__image {
-    height: 400px;
-    width: 350px;
+    height: 450px;
+    width: 600px;
+    margin-top: 50px;
 }
 
 .home__header {
-    width: 300px;
+    width: 400px;
     font-family: 'Instrument-Serif';
     font-size: 20px;
 }
 
 .home__sub-header {
-    width: 300px;
+    width: 400px;
     font-family: 'Instrument-Sans';
     font-size: 24px;
     line-height: 1.6em;
 }
 
 .home__description {
-    width: 300px;
+    width: 400px;
     font-family: 'Instrument-Serif';
     font-size: 20px;
     line-height: 1.6em;
+}
+
+.home__hummingbird {
+    height: 150px;
+    width: 200px;
 }

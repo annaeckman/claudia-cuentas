@@ -1,24 +1,17 @@
-import { useState } from 'react'
 import './App.css'
-import { Link } from 'react-router'
-import { title, claudiaDescription } from '../../utils/copy.tsx'
-import { useParams } from 'react-router'
 import useLang from '../../utils/useLang.ts'
 import Nav from '../Nav/Nav.tsx'
 import Home from '../../pages/Home/Home.tsx'
-import CoraCenter from '../CoraCenter/CoraCenter.tsx'
 import Footer from '../Footer/Footer.tsx'
 import { BrowserRouter, Routes, Route, Navigate, Outlet } from 'react-router'
 import { Lang } from '../../utils/useLang.ts'
 import Music from '../../pages/Music/Music.tsx'
 import Services from '../../pages/Services/Services.tsx'
-import ContactMe from '../../pages/ContactMe/ContactMe.tsx'
+import ContactMe from '../ContactMe/ContactMe.tsx'
 
 const defaultLang: Lang = 'en'
 
 function App(): JSX.Element {
-    const lang = useLang()
-
     return (
         <BrowserRouter>
             <Routes>

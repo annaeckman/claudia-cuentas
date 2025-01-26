@@ -6,6 +6,7 @@
 
 .cora__text-container {
     background-color: #d25a3d;
+    /* background-color: #6e0e07; */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -16,7 +17,8 @@
 
 .cora__image-container {
     height: 100%;
-    background-color: #dc8d5e;
+    background-color: #d25a3d;
+    /* background-color: #6e0e07; */
     display: flex;
     justify-content: center;
     align-items: center;
